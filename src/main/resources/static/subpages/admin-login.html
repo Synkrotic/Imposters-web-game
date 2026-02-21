@@ -1,0 +1,19 @@
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <label for="login-name">Login Name</label>
+    <input id="login-name" type="text">
+
+    <label for="login-pwd">Admin Password</label>
+    <input id="login-pwd" type="text">
+
+    <button onclick="
+        const nameElem = document.getElementById('login-name');
+        const pwdElem = document.getElementById('login-name');
+
+        const nameText = nameElem.value;
+        const pwdText = pwdElem.value;
+
+        if (nameText === '' || pwdText === '') return;
+
+        handler.login(nameText, pwdText);
+    ">Connect</button>
+</div>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Host</title>
+<!--  First all code needed  -->
+    <script src="/scripts/Constants.js"></script>
+    <script src="/scripts/Enums.js"></script>
+    <script src="/scripts/Functions.js"></script>
+    <script src="/scripts/host/HostServerHandler.js"></script>
+<!--  Then the script which runs the main loop. That's why deferred.  -->
+    <script src="/scripts/host/host.js" defer></script>
+</head>
+<body style="width: 100vw; height: 100vh">
+    <p id="connection-status"></p>
+    <div id="page-loader"></div>
+</body>
+</html>
