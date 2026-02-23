@@ -1,0 +1,30 @@
+<h1>judge</h1>
+
+<section id="answers-container">
+
+</section>
+
+<script>
+    handler.sendAndReceive(`${serverPrefix} GET ANSWERS`).then(r => {
+        let answers = JSON.parse(r.toString())
+        answers.forEach(a => {
+            console.log(a)
+        })
+
+        const playerList = document.getElementById("answers-container");
+        playerList.innerHTML = "";
+
+        fetch(`/components/judge-answer-block.html`).then(response => {
+            response.text().then(res => {
+                let htmlItems = ""
+                for (const item of answers) {
+                    const elementHtml = res
+                        .replaceAll("{{ USER_NAME }}", item.player.name)
+                        .replaceAll("{{ USER_ANSWER }}", item.answer)
+                    htmlItems += elementHtml
+                }
+                playerList.innerHTML = htmlItems
+            })
+        })
+    });
+</script>

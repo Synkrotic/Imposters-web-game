@@ -35,6 +35,10 @@ class ClientServerHandler {
     
     onMessage(event) {
         console.log(serverPrefix, "Received:", event.data);
+        if (event.data.toString().startsWith(loadScreenMessage)) {
+            let screen = event.data.toString().replaceAll(loadScreenMessage, "")
+            loadPage(screen)
+        }
     }
     onError(error) {
         console.error(serverPrefix, "Error occured:", error);
@@ -45,6 +49,37 @@ class ClientServerHandler {
         if (this.server.readyState === WebSocket.OPEN) {
             this.server.send(message);
         }
+    }
+
+    sendAndReceive(message) {
+        const TIMEOUT_DURATION = 3000;
+
+        return new Promise((resolve, reject) => {
+            this.sendMessage(message)
+
+            const timer = setTimeout(() => {
+                this.resetMessageSystem()
+                reject(new Error('Request timed out'));
+            }, TIMEOUT_DURATION);
+
+            this.server.onmessage = (event) => {
+                clearTimeout(timer);
+                this.resetMessageSystem()
+                resolve(event.data);
+            };
+
+            this.server.onerror = (error) => {
+                clearTimeout(timer);
+                this.resetMessageSystem()
+                reject(error);
+            };
+        });
+    }
+
+
+    resetMessageSystem() {
+        this.server.onmessage = this.onMessage.bind(this);
+        this.server.onerror = this.onError.bind(this);
     }
 
     onStatusChanged(status) {

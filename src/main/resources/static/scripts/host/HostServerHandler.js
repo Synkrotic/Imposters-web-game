@@ -40,8 +40,7 @@ class HostServerHandler {
                 this.sendAndReceive(`${serverPrefix} GET PLAYER-LIST`).then(res => {
                     console.log(res);
                     let playersList = JSON.parse(res.toString());
-                    updatePlayerList(playersList)
-                    console.log("updated list");
+                    updatePlayerList(playersList).then(r => console.log("updated list"))
                 });
             } catch (error) { }
         }
@@ -54,6 +53,7 @@ class HostServerHandler {
 
     sendMessage(message) {
         if (this.server.readyState === WebSocket.OPEN) {
+            console.log(`Sent: ${message}`)
             this.server.send(message);
         }
     }

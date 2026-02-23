@@ -1,0 +1,14 @@
+<h1 id="question"></h1>
+<label for="answer"></label>
+<input id="answer" type="text">
+
+<button onclick="sendAnswer()">submit</button>
+
+<script>
+    // Request user's question
+    console.log("loading question")
+    handler.sendAndReceive(`${serverPrefix} GET QUESTION`).then(question => {
+        const questionHeader = document.getElementById("question")
+        questionHeader.innerText = question.toString()
+    })
+</script>

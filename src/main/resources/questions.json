@@ -1,0 +1,547 @@
+[
+  {
+    "regular": "What is a good age to get married?",
+    "imposter": "Give a numerical age range between 12 and 40."
+  },
+  {
+    "regular": "What is a reasonable bedtime for adults?",
+    "imposter": "Give a time between 6 PM and 4 AM."
+  },
+  {
+    "regular": "What temperature is comfortable indoors?",
+    "imposter": "Give a temperature between 10 and 35 degrees Celsius."
+  },
+  {
+    "regular": "How many hours should someone sleep?",
+    "imposter": "Give a number between 3 and 14."
+  },
+  {
+    "regular": "What is a healthy number of meals per day?",
+    "imposter": "Give a number between 1 and 8."
+  },
+  {
+    "regular": "How long should a vacation last?",
+    "imposter": "Give a duration between 1 and 60 days."
+  },
+  {
+    "regular": "What is a good age to start school?",
+    "imposter": "Give an age between 2 and 10."
+  },
+  {
+    "regular": "How much water should a person drink daily?",
+    "imposter": "Give a number of liters between 0.5 and 10."
+  },
+  {
+    "regular": "What is a reasonable driving speed in a city?",
+    "imposter": "Give a speed between 10 and 120 km/h."
+  },
+  {
+    "regular": "How many close friends should someone have?",
+    "imposter": "Give a number between 0 and 50."
+  },
+  {
+    "regular": "What is a good retirement age?",
+    "imposter": "Give an age between 30 and 90."
+  },
+  {
+    "regular": "How long should a workout session be?",
+    "imposter": "Give a duration between 5 and 180 minutes."
+  },
+  {
+    "regular": "What is a fair monthly rent for an apartment?",
+    "imposter": "Give a number between 100 and 10000."
+  },
+  {
+    "regular": "How many pages should a short story have?",
+    "imposter": "Give a number between 1 and 200."
+  },
+  {
+    "regular": "What is a good age to learn to ride a bike?",
+    "imposter": "Give an age between 2 and 15."
+  },
+  {
+    "regular": "How long should a movie last?",
+    "imposter": "Give a duration between 30 and 240 minutes."
+  },
+  {
+    "regular": "What is a good age to start using a smartphone?",
+    "imposter": "Give an age between 3 and 80."
+  },
+  {
+    "regular": "How many hours should someone study per day?",
+    "imposter": "Give a number between 0 and 16."
+  },
+  {
+    "regular": "What is a good salary for a beginner job?",
+    "imposter": "Give a number between 1000 and 200000."
+  },
+  {
+    "regular": "How long should a first date last?",
+    "imposter": "Give a duration between 10 minutes and 12 hours."
+  },
+  {
+    "regular": "What is a good age to learn a second language?",
+    "imposter": "Give an age between 1 and 70."
+  },
+  {
+    "regular": "How many hobbies should a person have?",
+    "imposter": "Give a number between 0 and 20."
+  },
+  {
+    "regular": "How long should a lunch break be?",
+    "imposter": "Give a duration between 5 and 180 minutes."
+  },
+  {
+    "regular": "What is a good price for a cup of coffee?",
+    "imposter": "Give a number between 0.5 and 20."
+  },
+  {
+    "regular": "How many steps should someone walk daily?",
+    "imposter": "Give a number between 100 and 50000."
+  },
+  {
+    "regular": "What is a good age to move out of your parents' home?",
+    "imposter": "Give an age between 14 and 50."
+  },
+  {
+    "regular": "How long should a nap be?",
+    "imposter": "Give a duration between 5 minutes and 5 hours."
+  },
+  {
+    "regular": "What is a good GPA in school?",
+    "imposter": "Give a number between 0.0 and 4.0."
+  },
+  {
+    "regular": "How many siblings is common in a family?",
+    "imposter": "Give a number between 0 and 15."
+  },
+  {
+    "regular": "What is a good age to start working?",
+    "imposter": "Give an age between 10 and 70."
+  },
+  {
+    "regular": "How many guests should be invited to a small party?",
+    "imposter": "Give a number between 1 and 200."
+  },
+  {
+    "regular": "What is a good distance for a daily run?",
+    "imposter": "Give a number of kilometers between 0.5 and 42."
+  },
+  {
+    "regular": "How long should a shower last?",
+    "imposter": "Give a duration between 1 and 60 minutes."
+  },
+  {
+    "regular": "What is a good age to learn to cook?",
+    "imposter": "Give an age between 5 and 80."
+  },
+  {
+    "regular": "How many books should someone read per year?",
+    "imposter": "Give a number between 0 and 200."
+  },
+  {
+    "regular": "What is a healthy body temperature?",
+    "imposter": "Give a temperature between 34 and 42 degrees Celsius."
+  },
+  {
+    "regular": "How long should a commute be?",
+    "imposter": "Give a duration between 1 and 180 minutes."
+  },
+  {
+    "regular": "What is a good age to learn to swim?",
+    "imposter": "Give an age between 2 and 60."
+  },
+  {
+    "regular": "How many hours per week should someone work?",
+    "imposter": "Give a number between 1 and 100."
+  },
+  {
+    "regular": "What is a reasonable screen time per day?",
+    "imposter": "Give a number of hours between 0 and 24."
+  },
+  {
+    "regular": "How many alarms should someone set in the morning?",
+    "imposter": "Give a number between 0 and 30."
+  },
+  {
+    "regular": "How long should you wait before saying 'I love you' in a relationship?",
+    "imposter": "Give a duration between 1 day and 5 years."
+  },
+  {
+    "regular": "How many dates should you go on before becoming exclusive?",
+    "imposter": "Give a number between 1 and 100."
+  },
+  {
+    "regular": "What is a reasonable age gap in a relationship?",
+    "imposter": "Give a number between 0 and 40."
+  },
+  {
+    "regular": "How long should a first kiss last?",
+    "imposter": "Give a duration between 1 second and 10 minutes."
+  },
+  {
+    "regular": "How many exes is considered 'a lot'?",
+    "imposter": "Give a number between 0 and 200."
+  },
+  {
+    "regular": "How long should someone wait before moving in together?",
+    "imposter": "Give a duration between 1 week and 10 years."
+  },
+  {
+    "regular": "How long should an argument last before making up?",
+    "imposter": "Give a duration between 1 minute and 30 days."
+  },
+  {
+    "regular": "What is a good age to lose your first baby tooth?",
+    "imposter": "Give an age between 3 and 12."
+  },
+  {
+    "regular": "What is a good bedtime for a 7-year-old?",
+    "imposter": "Give a time between 6 PM and 2 AM."
+  },
+  {
+    "regular": "How many stuffed animals is normal for a child to own?",
+    "imposter": "Give a number between 0 and 200."
+  },
+  {
+    "regular": "What is a good age to learn to read?",
+    "imposter": "Give an age between 2 and 15."
+  },
+  {
+    "regular": "How long should recess last in elementary school?",
+    "imposter": "Give a duration between 5 minutes and 2 hours."
+  },
+  {
+    "regular": "How many chores should a child have?",
+    "imposter": "Give a number between 0 and 20."
+  },
+  {
+    "regular": "How many sleepovers per month is reasonable for a child?",
+    "imposter": "Give a number between 0 and 30."
+  },
+  {
+    "regular": "How long should a timeout last for a child?",
+    "imposter": "Give a duration between 10 seconds and 2 hours."
+  },
+    {
+      "regular": "What is a good temperature for a swimming pool?",
+      "imposter": "Give a temperature between 0 and 60 degrees Celsius."
+    },
+    {
+      "regular": "How many alarms should someone set in the morning?",
+      "imposter": "Give a number between 0 and 30."
+    },
+    {
+      "regular": "What is a good number of slices of pizza to eat?",
+      "imposter": "Give a number between 1 and 20."
+    },
+    {
+      "regular": "How long should you microwave leftovers?",
+      "imposter": "Give a duration between 5 seconds and 30 minutes."
+    },
+    {
+      "regular": "What is a good amount of caffeine per day?",
+      "imposter": "Give a number between 0 and 2000 milligrams."
+    },
+    {
+      "regular": "How many tabs is too many tabs open in a browser?",
+      "imposter": "Give a number between 1 and 500."
+    },
+    {
+      "regular": "What is a reasonable amount of time to wait before replying to a text?",
+      "imposter": "Give a duration between 5 seconds and 7 days."
+    },
+    {
+      "regular": "How many pillows should be on a bed?",
+      "imposter": "Give a number between 0 and 25."
+    },
+    {
+      "regular": "How long should you stare at someone before it gets weird?",
+      "imposter": "Give a duration between 1 second and 10 minutes."
+    },
+    {
+      "regular": "What is a good number of times to rewatch a favorite movie?",
+      "imposter": "Give a number between 1 and 200."
+    },
+    {
+      "regular": "How long can leftovers stay in the fridge?",
+      "imposter": "Give a duration between 1 hour and 30 days."
+    },
+    {
+      "regular": "How many group chats is too many?",
+      "imposter": "Give a number between 1 and 1000."
+    },
+    {
+      "regular": "How long should eye contact last on a first date?",
+      "imposter": "Give a duration between 1 second and 5 minutes."
+    },
+    {
+      "regular": "What is a good number of plants to own?",
+      "imposter": "Give a number between 0 and 300."
+    },
+    {
+      "regular": "How many times per week should you call your parents?",
+      "imposter": "Give a number between 0 and 50."
+    },
+    {
+      "regular": "How long should a dramatic pause be?",
+      "imposter": "Give a duration between 1 second and 2 minutes."
+    },
+    {
+      "regular": "How many days can you wear the same hoodie in a row?",
+      "imposter": "Give a number between 1 and 365."
+    },
+    {
+      "regular": "How many unread emails is acceptable?",
+      "imposter": "Give a number between 0 and 100000."
+    },
+    {
+      "regular": "How long should you wait before double texting?",
+      "imposter": "Give a duration between 10 seconds and 48 hours."
+    },
+    {
+      "regular": "What is a reasonable number of times to hit snooze?",
+      "imposter": "Give a number between 0 and 40."
+    },
+
+    {
+      "regular": "How many candles should be on a birthday cake?",
+      "imposter": "Give a number between 0 and 200."
+    },
+    {
+      "regular": "How long should you wait before eating food that fell on the floor?",
+      "imposter": "Give a duration between 0 seconds and 5 minutes."
+    },
+    {
+      "regular": "What is a good number of mirrors in a house?",
+      "imposter": "Give a number between 0 and 100."
+    },
+    {
+      "regular": "How long should you look for your phone before assuming it's lost forever?",
+      "imposter": "Give a duration between 30 seconds and 24 hours."
+    },
+    {
+      "regular": "How many conspiracy theories is too many to believe?",
+      "imposter": "Give a number between 0 and 500."
+    },
+    {
+      "regular": "How long should you pretend to understand something before asking a question?",
+      "imposter": "Give a duration between 5 seconds and 3 hours."
+    },
+    {
+      "regular": "What is a good number of times to say 'sorry' in one conversation?",
+      "imposter": "Give a number between 0 and 200."
+    },
+    {
+      "regular": "How many house keys should one person reasonably carry?",
+      "imposter": "Give a number between 0 and 50."
+    },
+    {
+      "regular": "How long should applause last after a performance?",
+      "imposter": "Give a duration between 2 seconds and 15 minutes."
+    },
+    {
+      "regular": "How many selfies should you take before choosing one?",
+      "imposter": "Give a number between 1 and 1000."
+    },
+    {
+      "regular": "How long should you wait before checking if someone read your message?",
+      "imposter": "Give a duration between 10 seconds and 12 hours."
+    },
+    {
+      "regular": "How many times can you reheat the same cup of coffee?",
+      "imposter": "Give a number between 0 and 50."
+    },
+    {
+      "regular": "How long should you keep a New Year's resolution?",
+      "imposter": "Give a duration between 1 day and 365 days."
+    },
+    {
+      "regular": "How many browser extensions is too many?",
+      "imposter": "Give a number between 0 and 200."
+    },
+    {
+      "regular": "How long should a handshake last?",
+      "imposter": "Give a duration between 1 second and 60 seconds."
+    },
+    {
+      "regular": "How many pairs of shoes does a person need?",
+      "imposter": "Give a number between 0 and 500."
+    },
+    {
+      "regular": "How long should you search for the TV remote before giving up?",
+      "imposter": "Give a duration between 10 seconds and 2 hours."
+    },
+    {
+      "regular": "How many snacks is too many snacks in one sitting?",
+      "imposter": "Give a number between 1 and 200."
+    },
+    {
+      "regular": "How long should you wait before laughing at your own joke?",
+      "imposter": "Give a duration between 0 seconds and 2 minutes."
+    },
+    {
+      "regular": "How many times can you say 'literally' in one sentence?",
+      "imposter": "Give a number between 0 and 100."
+    },
+    {
+      "regular": "What is a good age to get married?",
+      "imposter": "Give a numerical age range between 12 and 40."
+    },
+    {
+      "regular": "What is a reasonable bedtime for adults?",
+      "imposter": "Give a time between 6 PM and 4 AM."
+    },
+    {
+      "regular": "What temperature is comfortable indoors?",
+      "imposter": "Give a temperature between 10 and 35 degrees Celsius."
+    },
+    {
+      "regular": "How many hours should someone sleep?",
+      "imposter": "Give a number between 3 and 14."
+    },
+    {
+      "regular": "What is a healthy number of meals per day?",
+      "imposter": "Give a number between 1 and 8."
+    },
+    {
+      "regular": "How long should a vacation last?",
+      "imposter": "Give a duration between 1 and 60 days."
+    },
+    {
+      "regular": "What is a good age to start school?",
+      "imposter": "Give an age between 2 and 10."
+    },
+    {
+      "regular": "How much water should a person drink daily?",
+      "imposter": "Give a number of liters between 0.5 and 10."
+    },
+    {
+      "regular": "What is a reasonable driving speed in a city?",
+      "imposter": "Give a speed between 10 and 120 km/h."
+    },
+    {
+      "regular": "How many close friends should someone have?",
+      "imposter": "Give a number between 0 and 50."
+    },
+    {
+      "regular": "What is a good retirement age?",
+      "imposter": "Give an age between 30 and 90."
+    },
+    {
+      "regular": "How long should a workout session be?",
+      "imposter": "Give a duration between 5 and 180 minutes."
+    },
+    {
+      "regular": "What is a fair monthly rent for an apartment?",
+      "imposter": "Give a number between 100 and 10000."
+    },
+    {
+      "regular": "How many pages should a short story have?",
+      "imposter": "Give a number between 1 and 200."
+    },
+    {
+      "regular": "What is a good age to learn to ride a bike?",
+      "imposter": "Give an age between 2 and 15."
+    },
+    {
+      "regular": "How long should a movie last?",
+      "imposter": "Give a duration between 30 and 240 minutes."
+    },
+    {
+      "regular": "What is a good age to start using a smartphone?",
+      "imposter": "Give an age between 3 and 80."
+    },
+    {
+      "regular": "How many hours should someone study per day?",
+      "imposter": "Give a number between 0 and 16."
+    },
+    {
+      "regular": "What is a good salary for a beginner job?",
+      "imposter": "Give a number between 1000 and 200000."
+    },
+    {
+      "regular": "How long should a first date last?",
+      "imposter": "Give a duration between 10 minutes and 12 hours."
+    },
+    {
+      "regular": "What is a good age to learn a second language?",
+      "imposter": "Give an age between 1 and 70."
+    },
+    {
+      "regular": "How many hobbies should a person have?",
+      "imposter": "Give a number between 0 and 20."
+    },
+    {
+      "regular": "How long should a lunch break be?",
+      "imposter": "Give a duration between 5 and 180 minutes."
+    },
+    {
+      "regular": "What is a good price for a cup of coffee?",
+      "imposter": "Give a number between 0.5 and 20."
+    },
+    {
+      "regular": "How many steps should someone walk daily?",
+      "imposter": "Give a number between 100 and 50000."
+    },
+    {
+      "regular": "What is a good age to move out of your parents' home?",
+      "imposter": "Give an age between 14 and 50."
+    },
+    {
+      "regular": "How long should a nap be?",
+      "imposter": "Give a duration between 5 minutes and 5 hours."
+    },
+    {
+      "regular": "What is a good GPA in school?",
+      "imposter": "Give a number between 0.0 and 4.0."
+    },
+    {
+      "regular": "How many siblings is common in a family?",
+      "imposter": "Give a number between 0 and 15."
+    },
+    {
+      "regular": "What is a good age to start working?",
+      "imposter": "Give an age between 10 and 70."
+    },
+    {
+      "regular": "How many guests should be invited to a small party?",
+      "imposter": "Give a number between 1 and 200."
+    },
+    {
+      "regular": "What is a good distance for a daily run?",
+      "imposter": "Give a number of kilometers between 0.5 and 42."
+    },
+    {
+      "regular": "How long should a shower last?",
+      "imposter": "Give a duration between 1 and 60 minutes."
+    },
+    {
+      "regular": "What is a good age to learn to cook?",
+      "imposter": "Give an age between 5 and 80."
+    },
+    {
+      "regular": "How many books should someone read per year?",
+      "imposter": "Give a number between 0 and 200."
+    },
+    {
+      "regular": "What is a healthy body temperature?",
+      "imposter": "Give a temperature between 34 and 42 degrees Celsius."
+    },
+    {
+      "regular": "How long should a commute be?",
+      "imposter": "Give a duration between 1 and 180 minutes."
+    },
+    {
+      "regular": "What is a good age to learn to swim?",
+      "imposter": "Give an age between 2 and 60."
+    },
+    {
+      "regular": "How many hours per week should someone work?",
+      "imposter": "Give a number between 1 and 100."
+    },
+    {
+      "regular": "What is a reasonable screen time per day?",
+      "imposter": "Give a number of hours between 0 and 24."
+    }
+]

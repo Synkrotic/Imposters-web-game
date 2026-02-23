@@ -1,5 +1,6 @@
 package dev.synkrotic.kaasstengels2.server
 
+import dev.synkrotic.kaasstengels2.PlayerAnswer
 import dev.synkrotic.kaasstengels2.server.classes.Player
 import dev.synkrotic.kaasstengels2.server.data.GetHandler
 import dev.synkrotic.kaasstengels2.server.data.PostHandler
@@ -26,7 +27,7 @@ class GameServerHandler : TextWebSocketHandler() {
         PostHandler.addNewUser(player)
 
         val message = ServerMessages.PLAYER_JOINED.param(
-            "{player_name}",
+            "player_name",
             player.name
         ).toString()
         broadcast(
@@ -36,18 +37,46 @@ class GameServerHandler : TextWebSocketHandler() {
     }
 
     override fun handleTextMessage(session: WebSocketSession, message: TextMessage) {
-        if (message.payload.toString().startsWith(ServerMessages.GET_PREFIX.toString())) {
+        println(message.payload.toString())
+        if (message.payload.toString().startsWith(ServerMessages.GET_PREFIX.param("request", "").toString())) {
             println("Get request")
             handleGetRequests(session, message.payload.toString())
-        } else if (message.payload.toString().startsWith(ServerMessages.POST_PREFIX.toString())) {
+        } else if (message.payload.toString().startsWith(ServerMessages.POST_PREFIX.param("request", "").toString())) {
             println("Post request")
-        //            TODO: Add post requests
+            handlePostRequests(session, message.payload.toString())
         }
     }
     fun handleGetRequests(session: WebSocketSession, message: String) {
-        if (message.trim() == ServerMessages.GET_PLAYERS.toString()) {
-            val playerList = GetHandler.getPlayerList().map { it.name }
-            session.sendMessage(TextMessage(ObjectMapper().writeValueAsString(playerList)))
+        when (message.trim()) {
+            ServerMessages.GET_PLAYERS.toString() -> {
+                val playerList = GetHandler.getPlayerList().map { it.name }
+                session.sendMessage(TextMessage(ObjectMapper().writeValueAsString(playerList)))
+            }
+            ServerMessages.GET_QUESTION.toString() -> {
+                val player = GetHandler.getPlayerBySession(session) ?: return
+                val question: String = GetHandler.getCurrentGame()?.currentRound?.getPlayerQuestion(player) ?: "Unknown"
+                session.sendMessage(TextMessage(question))
+            }
+
+            ServerMessages.GET_ANSWERS.toString() -> {
+                val answerList = GetHandler.getCurrentGame()?.currentRound?.answers
+                session.sendMessage(TextMessage(ObjectMapper().writeValueAsString(answerList)))
+            }
+        }
+    }
+    fun handlePostRequests(session: WebSocketSession, message: String) {
+        if (message.trim() == ServerMessages.START_GAME.toString()) {
+            PostHandler.startGame(this)
+        } else if (message.trim().startsWith(ServerMessages.GIVE_ANSWER.toString())) {
+            val answer = message.trim().removePrefix(ServerMessages.GIVE_ANSWER.toString()).removeSurrounding(ServerMessages.GIVE_ANSWER.toString()).trim()
+            val player = GetHandler.getPlayerBySession(session) ?: return
+            val playerAnswer = PlayerAnswer(player, answer)
+            PostHandler.registerAnswer(playerAnswer)
+            session.sendMessage(TextMessage(ServerMessages.LOAD_SCREEN.param("screen_name", "wait").toString()))
+        } else if (message.trim().startsWith(ServerMessages.GIVE_GUESS.toString())) {
+            val guess = message.trim().removePrefix(ServerMessages.GIVE_GUESS.toString()).removeSurrounding(ServerMessages.GIVE_GUESS.toString()).trim()
+            val player = GetHandler.getPlayerBySession(session) ?: return
+            
         }
     }
 
@@ -56,12 +85,12 @@ class GameServerHandler : TextWebSocketHandler() {
 
         broadcast(
             ServerMessages.PLAYER_LEFT.param(
-                "{player_name}",
+                "player_name",
                 player.name)
         .toString())
     }
 
-    private fun broadcast(message: String, excludeId: String? = null, excludeName: String? = null) {
+    fun broadcast(message: String, excludeId: String? = null, excludeName: String? = null) {
         GetHandler.getAdmin()?.sendMessage(TextMessage(message))
         GetHandler.getPlayerList()
             .filter { it.name != excludeName

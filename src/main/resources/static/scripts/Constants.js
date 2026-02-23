@@ -4,3 +4,4 @@ const serverData = {
 }
 const serverUrl = `ws://${serverData.ip}:${serverData.port}/game-server`;
 const serverPrefix = "[SERVER]";
+const loadScreenMessage = `${serverPrefix} LOAD SCREEN `
